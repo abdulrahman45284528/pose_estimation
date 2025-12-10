@@ -62,9 +62,6 @@ def pose_estimation(webcam_id=0, output_file=None):
             if output_file:
                 out.write(frame)
 
-            # Press 'q' to exit
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
 
         cap.release()
         if output_file:
@@ -96,4 +93,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
