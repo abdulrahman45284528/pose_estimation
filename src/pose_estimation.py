@@ -10,7 +10,7 @@ import argparse
 mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
 
-# Function to Draw Skeleton
+# Function to Draw Skeleton, this function is responsible for the skelton draw.
 def draw_landmarks(image, landmarks):
     mp_drawing.draw_landmarks(
         image,
@@ -96,3 +96,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
